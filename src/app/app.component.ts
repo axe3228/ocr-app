@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import * as Tesseract from 'tesseract.js';
 import { createWorker } from 'tesseract.js';
 
-declare var require: any;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +11,7 @@ export class AppComponent {
   title = 'ocr-app';
   worker!: Tesseract.Worker;
   workerReady = false;
-  image = '../assets/images/CVNwA.jpg';
+  image = '../assets/images/test.JPG';
   ocrResult = '';
   captureProgress = 0;
 
